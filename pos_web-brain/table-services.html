@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pos" />
+    <title>POS || Order Table</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="pages order-table-page" id="order_table_content">
+      <div class="sidebar">
+        <div class="logo">
+          <img
+            src="./assets/images/logo-sm.png"
+            class="logo-sm"
+            alt="logo-sm"
+          />
+          <img
+            src="./assets/images/logo-lg.png"
+            class="logo-lg"
+            alt="logo-lg"
+          />
+        </div>
+        <div class="side-list">
+          <ul class="inline-list">
+            <a href="index.html" class="list-link">
+              <i class="bx bx-dish icon"></i>
+              <li class="list-item">Menu</li>
+            </a>
+            <a href="table-services.html" class="list-link">
+              <i class="bx bxs-castle icon"></i>
+              <li class="list-item">Table Services</li>
+            </a>
+            <a href="product-list.html" class="list-link">
+              <i class="bx bx-calendar icon"></i>
+              <li class="list-item">Reservation</li>
+            </a>
+            <a href="#" class="list-link">
+              <i class="bx bx-bus icon"></i>
+              <li class="list-item">Delivery</li>
+            </a>
+            <a href="#" class="list-link">
+              <i class="bx bx-scatter-chart icon"></i>
+              <li class="list-item">Accounting</li>
+            </a>
+            <a href="#" class="list-link">
+              <i class="bx bx-cog icon"></i>
+              <li class="list-item">Settings</li>
+            </a>
+          </ul>
+        </div>
+        <div class="logout">
+          <ul class="inline-list">
+            <a href="#" class="list-link">
+              <i class="bx bx-log-out icon"></i>
+              <li class="list-item">Logout</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <div class="nav-btn">
+            <button class="btn" id="sidebarShow">
+              <i class="bx bx-menu"></i>
+              <i class="bx bx-x"></i>
+            </button>
+          </div>
+          <div class="header-tabs">
+            <div class="tabs">
+              <button class="tab active" data-nxt-toggle="first-floor">
+                First Floor
+              </button>
+              <button class="tab" data-nxt-toggle="second-floor">
+                Second Floor
+              </button>
+              <button class="tab" data-nxt-toggle="third-floor">
+                Third Floor
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div id="first-floor" class="tab-panel table-container active">
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="second-floor" class="tab-panel table-container">
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+          </div>
+          <div id="third-floor" class="tab-panel table-container">
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T1</p>
+                  </div>
+                  <div class="time">
+                    <span>6:30 PM</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="headings">
+                    <h2>Hassan</h2>
+                    <span>6 Guests</span>
+                  </div>
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+
+            <div class="table-card available-card sm-table">
+              <div class="upper-card">
+                <div class="card-header">
+                  <div class="heads">
+                    <p class="heading">T4</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btnns">
+                    <span class="badge badge-warning">Reserved</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-cards">
+                <div class="inner-card"></div>
+                <div class="inner-card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media-footer">
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-title text-ellipsis text-ellipsis-1">
+                Hassan
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc media-muted">Kitchen</span>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-heading">
+              <h1 class="title">T1</h1>
+            </div>
+            <div class="media-body">
+              <div class="media-head">
+                <div class="media-title text-ellipsis text-ellipsis-1">
+                  Hassan
+                </div>
+                <div class="badge badge-primary">Proccess</div>
+              </div>
+              <div class="media-foot">
+                <p class="media-desc">6 item</p>
+                <img src="./assets/images/icon/arrow.png" alt="arrow" />
+                <span class="media-desc">Kitchen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas order-table-offcanvas">
+      <div class="offcanvas-head">
+        <div class="user-heading">
+          <h1>Book Table</h1>
+        </div>
+        <div class="table-number">
+          <p class="num">T4</p>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <form action="">
+          <div class="auth-order-info">
+            <label for="" class="auth-info-label">Name</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="field"
+                placeholder="Robert Fox"
+                required
+              />
+            </div>
+          </div>
+          <div class="auth-order-info">
+            <label for="" class="auth-info-label">Guest</label>
+            <div class="input-group">
+              <div class="quantity-counter">
+                <div class="counter">
+                  <button class="btn btn-primary" id="decrement">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="field-text"
+                    id="quantity"
+                    value="1"
+                  />
+                  <button class="btn btn-primary" id="increment">
+                    <i class="bx bx-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="auth-order-info">
+            <label for="" class="auth-info-label">Date</label>
+            <div class="input-group">
+              <input type="date" value="2025-09-02" class="field" required />
+            </div>
+          </div>
+          <div class="auth-order-info">
+            <label for="" class="auth-info-label">Time</label>
+            <div class="input-group">
+              <input type="time" value="12:30" class="field" required />
+            </div>
+          </div>
+          <div class="auth-order-info auth-btn-info">
+            <button class="btn btn-primary btn-block btn-book">
+              Book Table
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

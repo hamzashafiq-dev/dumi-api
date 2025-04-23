@@ -1,0 +1,41 @@
+.modal-card {
+  --card-w: 100%;
+  --card-h: 100%;
+  --card-m: 0px;
+  --card-bs: none;
+  --card-image-h: 235px;
+  --card-title-fs: 24px;
+  --card-title-m: 0px;
+  --card-desc-color: var(--text);
+  --card-desc-lh: 20px;
+  @media (max-width: screen-size(md)) {
+    --card-h: auto;
+    margin-top: 50px;
+    padding-top: 5px;
+  }
+
+  .card-body {
+    margin-top: 20px;
+    .card-heading {
+      display: flex;
+      .card-price {
+        margin-left: auto;
+        color: var(--primary);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.78px;
+        text-align: right;
+      }
+    }
+  }
+
+  .card-foot {
+    margin-top: 25px;
+    @media (max-width: screen-size(md)) {
+      margin-top: 15px;
+    }
+    .card-desc {
+      font-weight: 300;
+    }
+  }
+}

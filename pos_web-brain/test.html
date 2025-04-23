@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIN Entry</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <style>
+    .login-content {
+      --dot-size: 12px;
+      padding: 20px;
+      text-align: center;
+      width: 330px;
+
+      .logo {
+        width: 80px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+
+      p {
+        color: #8a8a8a;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .pin-dots {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .dot {
+          width: var(--dot-size);
+          height: var(--dot-size);
+          margin: 0 5px;
+          background-color: var(--body);
+          border: 1px solid #cacaca;
+          border-radius: 50%;
+          transition: background-color 0.3s;
+
+          &.filled {
+            background-color: var(--primary);
+          }
+        }
+      }
+
+      .numpad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .btn {
+          --btn-rounded: 50%;
+          --btn-p: 28px;
+          --btn-size: 1.2rem;
+          --box-s: none;
+          --btn-bg: var(--body);
+          width: 0px;
+          height: 0px;
+          margin: 0 auto;
+        }
+      }
+
+      .sign-in {
+        --btn-w: 100%;
+        --btn-p: 16px;
+        --btn-size: 1.1rem;
+
+        &:disabled {
+          background-color: #c1c1c1;
+          cursor: not-allowed;
+        }
+      }
+    }
+  </style>
+  <body>
+    <div class="login-content">
+      <img src="./assets/images/logo-sm.png" alt="Logo" class="logo" />
+      <h2>Enter Pin</h2>
+      <p>Pin is required to enable Touch ID</p>
+
+      <!-- PIN dots -->
+      <div class="pin-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <!-- Number pad -->
+      <div class="numpad">
+        <button class="btn btn-light" onclick="enterPin(1)">1</button>
+        <button class="btn btn-light" onclick="enterPin(2)">2</button>
+        <button class="btn btn-light" onclick="enterPin(3)">3</button>
+        <button class="btn btn-light" onclick="enterPin(4)">4</button>
+        <button class="btn btn-light" onclick="enterPin(5)">5</button>
+        <button class="btn btn-light" onclick="enterPin(6)">6</button>
+        <button class="btn btn-light" onclick="enterPin(7)">7</button>
+        <button class="btn btn-light" onclick="enterPin(8)">8</button>
+        <button class="btn btn-light" onclick="enterPin(9)">9</button>
+        <button class="btn btn-light" onclick="enterPin(0)">0</button>
+        <button class="btn btn-light" onclick="deletePin()">⌫</button>
+      </div>
+
+      <!-- Sign in button -->
+      <button class="sign-in btn btn-primary" id="signInBtn" disabled>
+        Sign In
+      </button>
+    </div>
+
+    <script>
+      let pin = [];
+      const dots = document.querySelectorAll(".dot");
+      const signInBtn = document.getElementById("signInBtn");
+
+      function enterPin(number) {
+        if (pin.length < 6) {
+          pin.push(number);
+          updateDots();
+        }
+      }
+
+      function deletePin() {
+        pin.pop();
+        updateDots();
+      }
+
+      function updateDots() {
+        dots.forEach((dot, index) => {
+          if (index < pin.length) {
+            dot.classList.add("filled");
+          } else {
+            dot.classList.remove("filled");
+          }
+        });
+
+        signInBtn.disabled = pin.length !== 6;
+      }
+    </script>
+  </body>
+</html>

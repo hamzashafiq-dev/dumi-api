@@ -1,0 +1,93 @@
+.list-simple {
+  list-style: circle;
+  list-style-position: inside;
+  color: var(--muted);
+  margin: 10px 0;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+    font-size: clamp(16px, 80vw, 18px);
+    line-height: clamp(22px, 80vw, 24px);
+
+    b {
+      font-weight: 600;
+    }
+  }
+}
+
+.inline-list {
+  --icon-color: var(--primary);
+  --icon-size: 1.7rem;
+  --icon-wgt: 500;
+  --icon-padding: 0px;
+  --list-width: 45px;
+  --list-height: 45px;
+  --list-padding: 0px;
+  --rounded: 50%;
+  margin: 0;
+  padding: 0;
+
+  .list-link {
+    list-style: none;
+    text-decoration: none;
+    width: var(--list-width);
+    height: var(--list-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: var(--list-padding);
+    border-radius: var(--rounded);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: var(--primary);
+      .list-item {
+        color: var(--body);
+      }
+      .icon {
+        --icon-color: var(--body);
+      }
+    }
+
+    &.active {
+      background-color: var(--primary);
+      .list-item {
+        color: var(--body);
+      }
+      .icon {
+        --icon-color: var(--body);
+      }
+    }
+    .icon {
+      color: var(--icon-color);
+      font-size: var(--icon-size);
+      font-weight: var(--icon-wgt);
+      padding: 0 var(--icon-padding);
+      @media (max-width: screen-size(sm)) {
+        --icon-size: 1.3rem;
+        --icon-padding: 5px;
+      }
+    }
+    .list-item {
+      --fs: 16px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: var(--fs);
+      font-weight: 500;
+      line-height: 30px;
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+      @media (max-width: screen-size(lg)) {
+        --fs: 15px;
+      }
+      @media (max-width: screen-size(md)) {
+        --fs: 13px;
+      }
+      @media (max-width: screen-size(sm)) {
+        --fs: 12px;
+      }
+    }
+  }
+}

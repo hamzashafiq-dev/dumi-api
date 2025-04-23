@@ -1,0 +1,51 @@
+@import "./_core";
+@import "./button";
+@import "./modal_inputs";
+@import "./icon";
+@import "./select";
+@import "./quantity";
+@import "./checkbox";
+@import "./input";
+
+.form-btn {
+  --bg-color: #00932a;
+  --color: #ffffff;
+  --f-btn-p: 10px 35px;
+  --f-btn-border-width: 3px;
+  --f-btn-border-style: solid;
+  --f-btn-border-color: #cde9d4;
+  --f-btn-border-rounded: 10px;
+  --bg-color-hover: #06a032;
+  --color-hover: #ffffff;
+  --bg-color-focus: #06a032;
+  --color-focus: #ffffff;
+
+  border: var(--f-btn-border-width) var(--f-btn-border-style)
+    var(--f-btn-border-color);
+  border-radius: var(--f-btn-border-rounded);
+  color: var(--color);
+  padding: var(--f-btn-p);
+  background-color: var(--bg-color);
+  &:hover {
+    background-color: var(--bg-color-hover);
+    color: var(--color-hover);
+  }
+  &:focus {
+    background-color: var(--bg-color-focus);
+    color: var(--color-focus);
+  }
+}
+
+.form-btn-primary {
+  --bg-color-hover: transparent;
+  --color-hover: var(--primary);
+  --f-btn-border-color: var(--primary);
+}
+.form-btn-hover{
+    --f-btn-border-width:none;
+}
+.form-btn-hover-primary{
+    --bg-color-hover: #CDE9D4;
+    --color-hover: var(--primary);
+    --f-btn-border-color: var(--primary);
+}

@@ -1,0 +1,129 @@
+.check {
+  --check-w: 20px;
+  --check-h: 20px;
+  --check-br: 5px;
+  --check-c: #fff;
+  --check-bg: var(--primary);
+  --check-h-bg: var(--light-hover);
+  --check-d-bg: var(--primary-disable);
+  --check-bc: var(--primary);
+  --check-bs: var(--primary-rgb);
+  position: relative;
+  padding: 0px 10px 0px 30px;
+  margin-bottom: 5px;
+  vertical-align: text-top;
+  display: inline-block;
+  input {
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &:hover::before {
+      background-color: var(--check-h-bg);
+    }
+    &:focus::before {
+      box-shadow: var(--body) 0px 0px 0px 2px,
+        rgba(var(--check-bs), 0.3) 0px 0px 0px 4px;
+    }
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+    }
+
+    &::before {
+      height: var(--check-h);
+      width: var(--check-w);
+      border-radius: var(--check-br);
+      border: 1.5px solid var(--dark);
+    }
+
+    &::after {
+      display: none;
+      left: 8px;
+      top: 4.5px;
+      width: 4px;
+      height: 9px;
+      border: solid var(--check-c);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    &:checked {
+      &::before {
+        background-color: var(--check-bg);
+        border: 1.5px solid var(--check-bc);
+      }
+
+      &::after {
+        display: block;
+      }
+    }
+    &:disabled {
+      cursor: not-allowed;
+      &::before {
+        background-color: var(--check-d-bg);
+      }
+    }
+  }
+}
+.check-secondary {
+  --check-c: #fff;
+  --check-bg: var(--secondary);
+  --check-bs: var(--secondary-rgb);
+  --check-bc: var(--secondary-focus);
+  --check-d: var(--secondary-disable);
+}
+.check-success {
+  --check-c: #fff;
+  --check-bg: var(--success);
+  --check-bs: var(--success-rgb);
+  --check-bc: var(--success-focus);
+  --check-d: var(--success-disable);
+}
+.check-danger {
+  --check-c: #fff;
+  --check-bg: var(--danger);
+  --check-bs: var(--danger-rgb);
+  --check-bc: var(--danger-focus);
+  --check-d: var(--danger-disable);
+}
+.check-warning {
+  --check-c: #fff;
+  --check-bg: var(--warning);
+  --check-bs: var(--warning-rgb);
+  --check-bc: var(--warning-focus);
+  --check-d: var(--warning-disable);
+}
+.check-info {
+  --check-c: #fff;
+  --check-bg: var(--info);
+  --check-bs: var(--info-rgb);
+  --check-bc: var(--info-focus);
+  --check-d: var(--info-disable);
+}
+.check-dark {
+  --check-c: #fff;
+  --check-bg: var(--dark);
+  --check-bs: var(--dark-rgb);
+  --check-bc: var(--dark-focus);
+  --check-d: var(--dark-disable);
+}
+.check-light {
+  --check-c: var(--text);
+  --check-bg: var(--light);
+  --check-bs: var(--light-rgb);
+  --check-bc: var(--light-focus);
+  --check-d: var(--light-disable);
+}
+.check-radio {
+  --check-br: 50px;
+}
+.check-block {
+  display: block;
+}

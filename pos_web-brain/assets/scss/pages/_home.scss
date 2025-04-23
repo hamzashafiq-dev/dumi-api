@@ -1,0 +1,304 @@
+.pages {
+  display: flex;
+  position: relative;
+  .content {
+    --content-width: 96%;
+    width: var(--content-width);
+    margin-left: auto;
+
+    @media (max-width: screen-size(xxl)) {
+      --content-width: 95.5%;
+    }
+    @media (max-width: screen-size(xl)) {
+      --content-width: 95%;
+    }
+    @media (max-width: screen-size(lg)) {
+      --content-width: 93.5%;
+    }
+    @media (max-width: screen-size(md)) {
+      --content-width: 100%;
+      margin: 0px;
+    }
+
+    &.active {
+      --content-width: 88%;
+    }
+    .categories_c {
+      display: flex;
+      gap: 15px;
+      padding: 15px 20px;
+    }
+    .product-cards {
+      padding: 15px 20px;
+      margin: 0;
+      .tab-panel {
+        background-color: transparent;
+      }
+      .row-cols-8 {
+        margin-bottom: 105px;
+      }
+    }
+    .media-footer {
+      display: -webkit-box;
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: white;
+      position: fixed;
+      bottom: 0px;
+      z-index: 24;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background: #c2c9d2;
+      }
+    }
+  }
+}
+
+body {
+  &.sidebar-show {
+    .header {
+      .btn {
+        i.bx-menu {
+          display: none;
+        }
+        i.bx-x {
+          display: block;
+        }
+      }
+      .header-tabs {
+        @media (max-width: screen-size(xxl)) {
+          width: 35%;
+        }
+        @media (max-width: screen-size(xl)) {
+          width: 40%;
+        }
+        @media (max-width: screen-size(lg)) {
+          width: 50%;
+        }
+        @media (max-width: screen-size(md)) {
+          width: 70%;
+        }
+      }
+    }
+    .sidebar {
+      --side-width: 12%;
+      @media (max-width: screen-size(xxl)) {
+        --side-width: 15%;
+      }
+      @media (max-width: screen-size(lg)) {
+        --side-width: 19%;
+      }
+      @media (max-width: screen-size(md)) {
+        --side-width: 22%;
+        left: 0px;
+      }
+      @media (max-width: screen-size(md)) {
+        --side-width: 22%;
+        left: 0px;
+      }
+      @media (max-width: screen-size(sm)) {
+        --side-width: 25%;
+      }
+    }
+    .pages .content {
+      --content-width: 88%;
+      @media (max-width: screen-size(xxl)) {
+        --content-width: 85%;
+      }
+      @media (max-width: screen-size(lg)) {
+        --content-width: 81%;
+      }
+      @media (max-width: screen-size(md)) {
+        --content-width: 78%;
+        margin-left: auto;
+      }
+      @media (max-width: screen-size(sm)) {
+        --content-width: 75%;
+      }
+      .categories-cards {
+        .categories-card {
+          @media (max-width: screen-size(sm)) {
+            --card-w: 115px;
+          }
+        }
+      }
+      .product-cards {
+        .row-cols-8 {
+          grid-template-columns: repeat(7, 1fr);
+          @media (max-width: screen-size(xxl)) {
+            grid-template-columns: repeat(5, 1fr);
+          }
+          @media (max-width: screen-size(lg)) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media (max-width: screen-size(md)) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @media (max-width: screen-size(sm)) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+      }
+    }
+    .sidebar .logo img.logo-sm {
+      display: none;
+    }
+    .sidebar .logo img.logo-lg {
+      display: block;
+    }
+    .inline-list {
+      --list-width: auto;
+      --list-height: auto;
+      --rounded: 50px;
+      --icon-padding: 10px;
+      --list-padding: 7px 10px;
+      @media (max-width: screen-size(xl)) {
+        --list-padding: 7px 0px;
+      }
+    }
+    .sidebar .side-list .inline-list .list-link {
+      display: flex;
+      justify-content: unset;
+    }
+    .sidebar .side-list .inline-list li {
+      display: block;
+    }
+    .sidebar .logout .inline-list li {
+      display: block;
+    }
+    .sidebar .logout .inline-list {
+      margin: 0;
+      width: calc(100% - 19px);
+    }
+
+    .product-list-view {
+      & .bars {
+        & .input-group {
+          .field {
+            width: 370px;
+          }
+        }
+      }
+    }
+
+    &.open {
+      .pages .content {
+        --content-width: 68%;
+        margin-left: 12%;
+        @media (max-width: screen-size(xxl)) {
+          --content-width: 61%;
+          margin-left: 15%;
+        }
+        @media (max-width: screen-size(lg)) {
+          --content-width: 56%;
+          margin-left: 18.5%;
+        }
+        @media (max-width: screen-size(md)) {
+          --content-width: 45%;
+          margin-left: 21%;
+        }
+        .row-cols-8 {
+          grid-template-columns: repeat(4, 1fr);
+          @media (max-width: screen-size(xxl)) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media (max-width: screen-size(lg)) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @media (max-width: screen-size(md)) {
+            grid-template-columns: repeat(1, 1fr) !important;
+          }
+        }
+      }
+      .media-footer {
+        width: 68%;
+      }
+    }
+  }
+  &.open {
+    .offcanvas {
+      display: block;
+      @media (max-width: screen-size(xxl)) {
+        --offcanvas-width: 24%;
+        --offcanvas-body-height: 475px;
+        .offcanvas-foot {
+          padding-top: 0px;
+        }
+      }
+      @media (max-width: screen-size(lg)) {
+        --offcanvas-width: 26%;
+      }
+      @media (max-width: screen-size(md)) {
+        --offcanvas-width: 35%;
+      }
+      .tabs .tab {
+        @media (max-width: screen-size(xxl)) {
+          padding: 17px 0;
+        }
+        @media (max-width: screen-size(md)) {
+          font-size: 12px;
+        }
+      }
+    }
+    .pages .content {
+      --content-width: 76%;
+      margin-left: 4%;
+      margin-right: auto;
+      @media (max-width: screen-size(xxl)) {
+        --content-width: 72.5%;
+      }
+      @media (max-width: screen-size(xl)) {
+        --content-width: 72%;
+        margin-left: 4.5%;
+      }
+      @media (max-width: screen-size(lg)) {
+        --content-width: 68%;
+        margin-left: 6.5%;
+      }
+      @media (max-width: screen-size(md)) {
+        --content-width: 65%;
+        margin-left: 0px;
+      }
+
+      .product-cards {
+        .row-cols-8 {
+          grid-template-columns: repeat(6, 1fr);
+          @media (max-width: screen-size(xxl)) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media (max-width: screen-size(xl)) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media (max-width: screen-size(lg)) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @media (max-width: screen-size(md)) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+      }
+    }
+  }
+  &.open-order {
+    .offcanvas {
+      display: block;
+    }
+  }
+  &.bucket-edit {
+    i.bx-edit-alt {
+      &::before {
+        content: "\ec8d";
+      }
+    }
+    .close-card {
+      display: flex;
+    }
+  }
+}

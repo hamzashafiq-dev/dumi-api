@@ -1,0 +1,102 @@
+.form-input-group {
+  --input-b-w: 2px;
+  --input-b-c: var(--border);
+  --input-focus-b-c: var(--primary);
+  --input-validate: var(--danger);
+  --input-c: #c6c6c6;
+  --input-rounded: var(--rounded);
+  --label-c: #c6c6c6;
+  --label-focus-c: var(--primary);
+  --label-fs: 14px;
+  --label-rounded: 30px;
+  --icon-c: #c6c6c6;
+  --icon-size: 27px;
+  width: 100%;
+  position: relative;
+
+  &.validation-wrng {
+    .form-input:focus {
+      border: 2px solid var(--input-validate);
+    }
+
+    .form-input:focus ~ .form-input-label,
+    .form-input:focus ~ .input-icon,
+    .form-input:focus ~ .incorrect {
+      color: var(--danger);
+    }
+  }
+
+  .form-input-label {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--label-c);
+    background-color: var(--body);
+    font-size: var(--label-fs);
+    padding: 0 10px;
+    border-radius: var(--label-rounded);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 14px 10px;
+    color: var(--input-c);
+    border: var(--input-b-w) solid var(--input-b-c);
+    border-radius: var(--input-rounded);
+    transition: border 0.25s ease-in-out;
+    outline: none;
+
+    &[type="password"] {
+      font-size: 20px;
+      .input-icon {
+        top: 14px;
+      }
+    }
+
+    &:focus {
+      border: 2px solid var(--input-focus-b-c);
+      color: #000000bd;
+    }
+  }
+
+  .input-icon {
+    color: var(--icon-c);
+    background: var(--body);
+    font-size: var(--icon-size);
+    position: absolute;
+    right: 14px;
+    top: 10px;
+  }
+}
+
+.form-input:focus ~ .form-input-label,
+.form-input:focus ~ .input-icon {
+  color: var(--primary);
+}
+
+input[type="date"],
+input[type="time"] {
+  position: relative;
+  background-size: 20px;
+  padding-right: 40px;
+  position: relative;
+}
+
+input[type="date"] {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="green" d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z"/></svg>')
+    no-repeat right 10px center;
+}
+
+input[type="time"] {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: green;transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>')
+    no-repeat right 10px center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+}

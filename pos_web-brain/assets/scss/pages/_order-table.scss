@@ -1,0 +1,46 @@
+.header-tabs {
+  width: 25%;
+  @media (max-width: screen-size(xxl)) {
+    width: 30%;
+  }
+  @media (max-width: screen-size(xl)) {
+    width: 35%;
+  }
+  @media (max-width: screen-size(lg)) {
+    width: 45%;
+  }
+  @media (max-width: screen-size(md)) {
+    width: 70%;
+  }
+  
+  .tabs {
+    .tab {
+      font-weight: 500;
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.order-table-page {
+  .tab-content {
+    margin: 0;
+    .tab-panel {
+      background-color: transparent;
+    }
+  }
+}
+
+.table-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-flow: dense;
+  padding: 20px;
+  margin-bottom: 90px;
+
+  &.tab-panel.active {
+    display: grid;
+  }
+}

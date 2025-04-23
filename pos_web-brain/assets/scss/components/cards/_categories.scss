@@ -1,0 +1,54 @@
+.categories-cards {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  &.tabs {
+    box-shadow: none;
+    background-color: transparent;
+    width: inherit;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #c2c9d2;
+  }
+  .categories-card {
+    --card-title-fs: 20px;
+    --card-bs: 0px 0px 0px 0px #00000040;
+    --card-title-m: 0px;
+    --card-h: 100%;
+    --card-w: 125px;
+    --card-m: 0px;
+    cursor: pointer;
+    --card-p: 1rem;
+    text-align: left;
+    padding: var(--card-p);
+
+
+    &.active {
+      --card-bc: var(--primary);
+      --card-bg: rgba(205, 233, 214, 1);
+      border: 2px dashed var(--primary);
+    }
+
+    .card-icon {
+      border: none;
+      padding: 0;
+      color: var(--primary);
+    }
+
+    .card-foot {
+      span {
+        color: rgba(122, 122, 122, 1);
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

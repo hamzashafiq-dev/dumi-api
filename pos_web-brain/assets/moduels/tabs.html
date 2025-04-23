@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    body {
+        height: 100vh;
+        background: rgba(238, 238, 238, 1);
+        padding: 100px 0px;
+    }
+
+    .boxed {
+        width: 20%;
+    }
+</style>
+
+<body>
+
+    <div class="boxed">
+        <div class="tabs">
+            <button class="tab active" data-nxt-toggle='dine-in'>Dine In</button>
+            <button class="tab" data-nxt-toggle='take-away'">Take Away</button>
+            <button class=" tab" data-nxt-toggle='delivery'>Delivery</button>
+        </div>
+
+        <div class="tab-content">
+            <div id="dine-in" class="tab-panel active">Content for Dine In</div>
+            <div id="take-away" class="tab-panel">Content for Take Away</div>
+            <div id="delivery" class="tab-panel">Content for Delivery</div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  viewBox="0 0 16 16" stroke="#fff"><path stroke="#fff" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem;
+  background-size: 16px 12px;
+}
+
+.input-group {
+  --input-color: var(--text);
+  --input-bg: var(--body);
+  --input-border: none;
+  --input-outline: none;
+  --input-padding: 10px 20px;
+  --input-fs: 1rem;
+  --input-rounded: 10px;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--body);
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.3rem;
+  // margin-bottom: 1rem;
+  .input-icon {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .field {
+    border: var(--input-border);
+    outline: var(--input-outline);
+    color: var(--input-color);
+    background-color: var(--input-bg);
+    padding: var(--input-padding);
+    font-size: var(--input-fs);
+    border-radius: var(--input-rounded);
+    padding-left: 10px;
+    width: 100%;
+    margin: 0px;
+    resize: none;
+    font-family: inherit;
+  }
+  .action-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: var(--body);
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 50px;
+    color: var(--text);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}

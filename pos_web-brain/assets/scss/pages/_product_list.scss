@@ -1,0 +1,50 @@
+.product-list-page {
+    height: 100vh;
+    overflow: hidden;
+
+    .product-list-view {
+        .header {
+          .p-heading {
+            font-size: 25px;
+            font-weight: 500;
+            color: var(--text);
+          }
+        }
+        .bars {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          gap: 10px;
+          padding: 0px 20px;
+          .input-group {
+            .field {
+              width: 400px;
+            }
+            span {
+              padding-left: 10px;
+            }
+            i {
+              color: #77797a;
+              padding-right: 10px;
+            }
+          }
+          .btn {
+            gap: 10px;
+            span {
+              background-color: var(--body);
+              color: var(--primary);
+              padding: 3px;
+              border-radius: 50%;
+              font-size: 8px;
+            }
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+        .link-list {
+          padding: 20px;
+          margin-bottom: 100px;
+        }
+      }
+}

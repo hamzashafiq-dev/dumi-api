@@ -1,0 +1,38 @@
+.quantity-counter {
+  margin: 40px 0;
+  @media (max-width: screen-size(md)) {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    .btn {
+      --btn-h: auto;
+      --btn-w: auto;
+      --btn-p: 0.5rem 0.5rem;
+      --btn-rounded: 5px;
+      border: 1px solid #00932a;
+      &#decrement {
+        --btn-bg: transparent;
+        --box-s: none;
+        border: 1px solid #9d9d9d;
+        color: var(--text);
+        &.btn-primary{
+          --btn-bg: var(--primary);
+          color: var(--body);
+        }
+        
+        // &:hover {
+        //   color: var(--text);
+        // }
+      }
+    }
+    .field-text {
+      --field-w: 50px;
+      --field-fs: 1.2rem;
+      line-height: 21.78px;
+      text-align: center;
+    }
+  }
+}

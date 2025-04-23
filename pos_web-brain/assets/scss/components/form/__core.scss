@@ -1,0 +1,166 @@
+.field-label {
+  font-size: calc(var(--font-size) - 0.1rem);
+  font-weight: 500;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.form-field {
+  margin-bottom: 1.1rem;
+  .field-label {
+    margin-bottom: 0.3rem;
+  }
+}
+.field {
+  --field-fg: #9D9D9D;
+  --field-bg: var(--light);
+  --field-br: 11px;
+  --field-bs: transparent;
+  --field-bc: #D6D6D6;
+  --field-w: 100%;
+  --field-p: 0.5rem 0.7rem;
+  --field-fs: 1rem;
+  --field-c: var(--muted-rgb);
+  display: inline-flex;
+  align-items: center;
+  box-shadow: var(--field-bs);
+  border-radius: var(--field-br);
+  border: 1px solid #D6D6D6;
+  width: var(--field-w);
+  margin-bottom: 0.3rem;
+}
+
+.field-text,
+.field-select,
+.field-textarea,
+.field-file {
+  --field-fg: #9D9D9D;
+  --field-bg: var(--light);
+  --field-br: var(--rounded);
+  --field-bs: transparent;
+  --field-w: 100%;
+  --field-p: 0.5rem 0.7rem;
+  --field-fs: 1rem;
+  --field-c: var(--muted-rgb);
+  outline: none;
+  border: none;
+  width: var(--field-w);
+  color: var(--field-fg);
+  font-size: var(--field-fs);
+  padding: var(--field-p);
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  appearance: none;
+  background-color: transparent;
+  position: relative;
+  z-index: 5;
+
+  &:disabled {
+    --field-bg: var(--light-disable);
+    cursor: not-allowed;
+  }
+  &::placeholder {
+    color: #9D9D9D;
+    --field-fs: 1rem;
+  }
+  option {
+    width: 100%;
+  }
+}
+
+.field-select {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 99.5%;
+  background-position-y: 50%;
+  background-size: 24px;
+}
+
+.field-icon,
+.field-action {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: calc(var(--field-fs) + 0.2rem);
+  color: var(--muted);
+  border-radius: 50px;
+  padding: 3px 6px;
+}
+.field-action:hover {
+  background-color: var(--light-hover);
+  cursor: pointer;
+}
+
+.field-sm {
+  --field-p: 0.3rem 0.5rem;
+  --field-fs: 0.8rem;
+  .field-select {
+    background-size: 20px;
+  }
+}
+
+.field-lg {
+  --field-p: 0.7rem 1rem;
+  --field-fs: 1rem;
+  .field-select {
+    background-size: 26px;
+  }
+}
+
+.field-inline {
+  --field-w: auto;
+  input,
+  select {
+    width: 100%;
+  }
+}
+
+.field-primary {
+  --field-c: var(--primary-rgb);
+  --field-bc: var(--primary);
+}
+.field-secondary {
+  --field-c: var(--secondary-rgb);
+  --field-bc: var(--secondary);
+}
+.field-warning {
+  --field-c: var(--warning-rgb);
+  --field-bc: var(--warning);
+}
+.field-success {
+  --field-c: var(--success-rgb);
+  --field-bc: var(--success);
+}
+.field-danger {
+  --field-c: var(--danger-rgb);
+  --field-bc: var(--danger);
+}
+.field-info {
+  --field-c: var(--info-rgb);
+  --field-bc: var(--info);
+}
+.field-dark {
+  --field-c: var(--dark-rgb);
+  --field-bc: var(--dark);
+}
+.field-light {
+  --field-c: var(--light-rgb);
+  --field-bc: var(--light);
+}
+
+.field-error-text,
+.field-error-text,
+.field-hint-text {
+  margin-top: 5px;
+  display: inline-block;
+  font-size: calc(var(--font-size) - 0.2rem);
+}
+.field-error-text {
+  color: var(--danger);
+}
+.field-success-text {
+  color: var(--success);
+}
+.field-hint-text {
+  color: var(--muted);
+}

@@ -1,0 +1,145 @@
+.body-login {
+  height: 100vh;
+  overflow: hidden;
+  .login-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .login-swiper {
+      width: 50%;
+      background-color: var(--body);
+      height: 100%;
+      align-content: center;
+      .content {
+        height: 62%;
+
+        .swiper {
+          position: relative;
+          text-align: center;
+          border-radius: 16px;
+          color: black;
+          overflow: hidden;
+          height: 100%;
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            img {
+              width: 300px;
+              height: 250px;
+            }
+            h1 {
+              font-size: 30px;
+              font-weight: 500;
+              color: black;
+            }
+            p {
+              font-size: 18px;
+              width: 50%;
+              line-height: 30px;
+              color: black;
+            }
+          }
+          .swiper-pagination-bullet-active {
+            background: #ccc;
+            width: 40px;
+            border-radius: 30px;
+          }
+          .swiper-pagination-bullet {
+            background-color: var(--primary);
+          }
+          .swiper-pagination {
+            bottom: 90px;
+          }
+        }
+      }
+    }
+    .login {
+      width: 50%;
+      height: 100%;
+      align-content: center;
+      .login-content {
+        --dot-size: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+
+        .logo {
+          width: 162px;
+          margin-bottom: 30px;
+        }
+
+        h2 {
+          margin-bottom: 20px;
+          font-size: 30px;
+          font-weight: 500;
+          color: var(--text);
+        }
+
+        p {
+          color: #8a8a8a;
+          font-size: 14px;
+          margin-bottom: 30px;
+        }
+
+        .pin-dots {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+
+          .dot {
+            width: var(--dot-size);
+            height: var(--dot-size);
+            margin: 0 5px;
+            background-color: var(--body);
+            border: 1px solid #cacaca;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+
+            &.filled {
+              background-color: var(--primary);
+            }
+          }
+        }
+
+        .numpad {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px 10px;
+          margin: 0 auto;
+          margin-bottom: 80px;
+
+          .btn {
+            --btn-rounded: 50%;
+            --btn-p: 28px;
+            --btn-size: 1.2rem;
+            --box-s: none;
+            --btn-bg: var(--body);
+            width: 0px;
+            height: 0px;
+            margin: 0 auto;
+            i{
+              font-size: inherit;
+              font-weight: inherit;
+            }
+          }
+        }
+
+        .sign-in {
+          --btn-w: 100%;
+          --btn-p: 16px;
+          --btn-size: 1.1rem;
+
+          &:disabled {
+            background-color: #c1c1c1;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

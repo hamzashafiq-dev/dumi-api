@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pos" />
+    <title>POS</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="pages">
+      <div class="sidebar">
+        <div class="logo">
+          <img
+            src="./assets/images/logo-sm.png"
+            class="logo-sm"
+            alt="logo-sm"
+          />
+          <img
+            src="./assets/images/logo-lg.png"
+            class="logo-lg"
+            alt="logo-lg"
+          />
+        </div>
+        <div class="side-list">
+          <ul class="inline-list">
+            <a href="index.html" class="list-link active">
+              <i class="bx bx-dish icon"></i>
+              <li class="list-item">Menu</li>
+            </a>
+            <a href="table-services.html" class="list-link">
+              <i class="bx bxs-castle icon"></i>
+              <li class="list-item">Table Services</li>
+            </a>
+            <a href="product-list.html" class="list-link">
+              <i class="bx bx-calendar icon"></i>
+              <li class="list-item">Reservation</li>
+            </a>
+            </a>
+            <a href="#" class="list-link">
+              <i class="bx bx-bus icon"></i>
+              <li class="list-item">Delivery</li>
+            </a>
+            <a href="#" class="list-link">
+              <i class="bx bx-scatter-chart icon"></i>
+              <li class="list-item">Accounting</li>
+            </a>
+            <a href="#" class="list-link">
+              <i class="bx bx-cog icon"></i>
+              <li class="list-item">Settings</li>
+            </a>
+          </ul>
+        </div>
+        <div class="logout">
+          <ul class="inline-list">
+            <a href="#" class="list-link">
+              <i class="bx bx-log-out icon"></i>
+              <li class="list-item">Logout</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="content" id="product_card_content">
+        <div class="header">
+          <div class="nav-btn">
+            <button type="button" class="btn" id="sidebarShow">
+              <i class="bx bx-menu"></i>
+              <i class="bx bx-x"></i>
+            </button>
+          </div>
+          <div class="search">
+            <div class="input-group">
+              <button type="button" class="input-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  id="search"
+                >
+                  <path
+                    fill="#200E32"
+                    d="M19.7555474,18.6065254 L16.3181544,15.2458256 L16.3181544,15.2458256 L16.2375905,15.1233001 C16.0877892,14.9741632 15.8829641,14.8901502 15.6691675,14.8901502 C15.4553709,14.8901502 15.2505458,14.9741632 15.1007444,15.1233001 L15.1007444,15.1233001 C12.1794834,17.8033337 7.6781476,17.94901 4.58200492,15.4637171 C1.48586224,12.9784243 0.75566836,8.63336673 2.87568494,5.31016931 C4.99570152,1.9869719 9.30807195,0.716847023 12.9528494,2.34213643 C16.5976268,3.96742583 18.4438102,7.98379036 17.2670181,11.7275931 C17.182269,11.9980548 17.25154,12.2921761 17.4487374,12.4991642 C17.6459348,12.7061524 17.9410995,12.794561 18.223046,12.7310875 C18.5049924,12.667614 18.7308862,12.4619014 18.8156353,12.1914397 L18.8156353,12.1914397 C20.2223941,7.74864367 18.0977423,2.96755391 13.8161172,0.941057725 C9.53449216,-1.08543846 4.38083811,0.250823958 1.68905427,4.08541671 C-1.00272957,7.92000947 -0.424820906,13.1021457 3.0489311,16.2795011 C6.5226831,19.4568565 11.8497823,19.6758854 15.5841278,16.7948982 L18.6276529,19.7705177 C18.9419864,20.0764941 19.4501654,20.0764941 19.764499,19.7705177 C20.0785003,19.4602048 20.0785003,18.9605974 19.764499,18.6502845 L19.764499,18.6502845 L19.7555474,18.6065254 Z"
+                    transform="translate(2 2)"
+                  ></path>
+                </svg>
+              </button>
+              <input
+                type="search"
+                class="field"
+                placeholder="Search Product here...."
+              />
+            </div>
+          </div>
+          <div class="filter-btn">
+            <button type="button" class="btn">
+              <i class="bx bx-cart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="categories_c">
+          <div class="cards categories-cards tabs">
+            <article class="card categories-card tab active" data-nxt-toggle="all">
+              <div class="card-head">
+                <div class="card-icon">
+                  <i class="bx bx-grid-alt icon"></i> 
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-title">All</p>
+              </div>
+              <div class="card-foot">
+                <span>30 items</span> 
+              </div>
+            </article>
+          
+            <article class="card categories-card tab" data-nxt-toggle="fragrances">
+              <div class="card-head">
+                <div class="card-icon">
+                  <i class="bx bx-spray-can icon"></i> 
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Fragrances</p>
+              </div>
+              <div class="card-foot">
+                <span>5 items</span>
+              </div>
+            </article>
+          
+            <article class="card categories-card tab" data-nxt-toggle="beauty">
+              <div class="card-head">
+                <div class="card-icon">
+                  <i class="bx bx-spa icon"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Beauty</p>
+              </div>
+              <div class="card-foot">
+                <span>5 items</span> 
+              </div>
+            </article>
+          
+            <article class="card categories-card tab" data-nxt-toggle="furniture">
+              <div class="card-head">
+                <div class="card-icon">
+                  <i class="bx bx-chair icon"></i> 
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Furniture</p>
+              </div>
+              <div class="card-foot">
+                <span>5 items</span> 
+              </div>
+            </article>
+          
+            <article class="card categories-card tab" data-nxt-toggle="groceries">
+              <div class="card-head">
+                <div class="card-icon">
+                  <i class="bx bx-basket icon"></i> 
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-title">Groceries</p>
+              </div>
+              <div class="card-foot">
+                <span>15 items</span> 
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <div class="product-cards tab-content">
+          <div id="all" class="tab-panel active">
+            <div class="row-cols-8"></div>
+          </div>
+          <div id="fragrances" class="tab-panel">
+            <div class="row-cols-8"></div>
+          </div>
+          <div id="beauty" class="tab-panel">
+            <div class="row-cols-8"></div>
+          </div>
+          <div id="furniture" class="tab-panel">
+            <div class="row-cols-8"></div>
+          </div>
+          <div id="groceries" class="tab-panel">
+            <div class="row-cols-8"></div>
+          </div>
+        </div>  
+      </div>
+      <div class="offcanvas" id="offcanvas_content">
+        <div class="offcanvas-head">
+          <div class="user-heading">
+            <h1>Cart</h1>
+            <p>Hassan</p>
+          </div>
+          <div class="user-edit" id="user_edit">
+            <i class="bx bx-edit-alt"></i>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-tabs">
+            <div class="tabs">
+              <button class="tab" data-nxt-toggle="take-away">Take Away</button>
+              <button class="tab" data-nxt-toggle="delivery">Delivery</button>
+            </div>
+            <div class="tab-content">
+              <div id="take-away" class="tab-panel">
+              </div>
+              <div id="delivery" class="tab-panel">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-foot">
+          <div class="price-recipt">
+            <div class="amount">
+              <div class="left">
+                <p>Sub Total</p>
+              </div>
+              <div class="right">
+                <p class="subtotal-price">$0.00</p>
+              </div>
+            </div>
+            <div class="amount">
+              <div class="left">
+                <p>Tax 5%</p>
+              </div>
+              <div class="right">
+                <p class="tax-price">$0.00</p>
+              </div>
+            </div>
+            <div class="amount total-price">
+              <div class="left">
+                <p>Total</p>
+              </div>
+              <div class="right">
+                <p class="subtotal-price">$0.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="payment-method">
+            <div class="buttons">
+              <div class="cash">
+                <button class="btn">
+                  <img src="./assets/images/icon/cash.svg" alt="Cash Payment" />
+                </button>
+                <h1>Cash</h1>
+              </div>
+              <div class="debit-card">
+                <button class="btn" >
+                  <img src="./assets/images/icon/credit-card.svg" alt="Card Payment" />
+                </button>
+                <h1>Debit/Credit Card</h1>
+              </div>
+              <div class="qr-code">
+                <button class="btn">
+                  <img src="./assets/images/icon/qr-code.svg" alt="QR Code Payment" />
+                </button>
+                <h1>QR Code</h1>
+              </div>
+            </div>
+          </div>
+          <div class="place-order">
+            <button class="btn btn-primary btn-block" data-target="payment">
+              Place Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="modal1Overlay">
+      <div class="modal" id="modal1">
+        <div class="modal-content product-detail-modal">
+          <div class="card modal-card">
+            <div class="card-head">
+              <div class="card-image">
+                <img
+                  src="./assets/images/product-image.png"
+                  class="image"
+                  alt="Product Image"
+                />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-heading">
+                <div class="card-title">
+                  Lemon Chocolate Cake with Raspberry
+                </div>
+                <div class="card-price">$60.45</div>
+              </div>
+            </div>
+            <div class="card-foot">
+              <p class="card-desc">
+                Lemon Chocolate Cake with Raspberry is a delightful fusion of
+                flavors that brings together the tangy zest of lemons, the rich
+                indulgence of chocolate, and the sweet-tart burst of fresh
+                raspberries. This cake features moist, velvety chocolate layers
+                balanced with a hint of citrus, creating a harmonious contrast
+                that excites the palate. The raspberry compote or fresh
+                raspberry garnish adds a refreshing, fruity note, making every
+                bite both indulgent and light.......
+              </p>
+              <div class="quantity-counter">
+                <div class="counter">
+                  <button class="btn" id="decrement">
+                    <i class="bx bx-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="field-text"
+                    id="quantity"
+                    value="1"
+                  />
+                  <button class="btn btn-primary" id="increment">
+                    <i class="bx bx-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-detail">
+            <span class="close-modal">
+              <svg viewBox="0 0 20 20" fill="#000" width="20px" height="20px">
+                <path
+                  d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"
+                ></path>
+              </svg>
+            </span>
+            <div class="product-choice">
+              <div class="input-field">
+                <h2>Cream</h2>
+                <span class="choice">
+                  <label class="check check-success">
+                    <input type="checkbox" /> <span>No Chocolate</span>
+                  </label>
+                </span>
+                <span class="choice">
+                  <label class="check check-success">
+                    <input type="checkbox" /> <span>Add Strawberry Gem</span>
+                  </label>
+                </span>
+                <span class="choice">
+                  <label class="check check-success">
+                    <input type="checkbox" /> <span> Decrease Sugar</span>
+                  </label>
+                </span>
+                <span class="choice">
+                  <label class="check check-success">
+                    <input type="checkbox" /> <span>Cheese Topping</span>
+                  </label>
+                </span>
+              </div>
+              <div class="select-flv">
+                <div class="input-field">
+                  <label class="field-label">Cart Type</label>
+                  <div class="field field-inline field-primary">
+                    <select name="cartType" id="cartType" class="field-select">
+                      <option value="take-away">Take Away</option>
+                      <option value="delivery">Delivery</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="form-field">
+                  <label class="field-label">First Name</label>
+                  <div class="field">
+                    <input
+                      type="text"
+                      class="field-text"
+                      placeholder="Write your name..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="button bucket-btn">
+                <button class="btn btn-primary btn-block" id="addToBucket">
+                  Add to Bucket
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="paymentOverlay">
+      <div class="modal payment-modal active" id="payment">
+        <div class="modal-content">
+          <div class="card payment-card">
+            <div class="card-head">
+              <div class="card-icon">
+                <img src="./assets/images/icon/check.png" alt="Product Image" />
+              </div>
+              <div class="card-title">Payment Success!</div>
+              <div class="price">$63.71</div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="card-desc">Order ID</div>
+                <div class="card-desc">5265662517</div>
+              </div>
+              <div class="d-flex">
+                <div class="card-desc">Payment Method</div>
+                <div class="card-desc">QR Code</div>
+              </div>
+              <div class="d-flex">
+                <div class="card-desc">Payment Time</div>
+                <div class="card-desc">06/11/23 10:45 PM</div>
+              </div>
+            </div>
+            <div class="card-foot">
+              <div class="button">
+                <button class="btn btn-block btn-primary">New Order</button>
+                <button class="btn btn-block print-btn" onclick="window.print()">
+                  <i class="bx bx-printer"></i> Print Receipt
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/renderer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.min.js"></script>
+    <script src="./assets/libs/swiper/swiper.min.js"></script>
+  </body>
+</html>

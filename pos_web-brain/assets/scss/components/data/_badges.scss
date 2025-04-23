@@ -1,0 +1,110 @@
+.card-badge {
+  --bg: #FED03C;
+  --fs: 12px;
+  --fw: 500;
+  --rounded: 0 10px 10px 0;
+  --padding: 3px 10px;
+  --border: none;
+  --badge-border: 2px solid var(--primary);
+  
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  .badge {
+    text-decoration: none;
+    color: var(--text);
+    background: var(--bg);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    padding: var(--padding);
+    border: var(--border);
+    border-radius: var(--rounded);
+    user-select: none;
+  }
+} 
+
+.badge {
+  --badge-bg: var(--body);
+  --badge-bg-hover: var(--light);
+  --badge-border-style: solid;
+  --badge-color: var(--text);
+  --badge-color-hover: var(--text);
+  --badge-wgt: 600;
+  --badge-size: 10px;
+  --badge-padding: 5px 10px;
+  --badge-rounded: 50px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: var(--badge-wgt);
+  color: var(--badge-color);
+  font-size: var(--badge-size);
+  padding: var(--badge-padding);
+  border-radius: var(--badge-rounded);
+  background-color: var(--badge-bg);
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.badge-primary {
+  --badge-bg: #CDE9D6;
+  --badge-color: var(--text);
+}
+
+.badge-info {
+  --badge-bg: var(--info-subtle);
+  --badge-border: var(--info);
+  --badge-color: var(--info);
+  --badge-bg-hover: inherit;
+  --badge-border-hover: inherit;
+  --badge-color-hover: inherit;
+}
+
+.badge-success {
+  --badge-bg: var(--success-subtle);
+  --badge-border: var(--success);
+  --badge-color: var(--success);
+  --badge-bg-hover: inherit;
+  --badge-border-hover: inherit;
+  --badge-color-hover: inherit;
+}
+
+.badge-warning {
+  --badge-bg: var(--warning-subtle);
+  --badge-border: var(--warning);
+  --badge-color: var(--warning);
+  --badge-bg-hover: inherit;
+  --badge-border-hover: inherit;
+  --badge-color-hover: inherit;
+}
+
+.badge-danger {
+  --badge-bg: var(--danger-subtle);
+  --badge-border: var(--danger);
+  --badge-color: var(--danger);
+  --badge-bg-hover: inherit;
+  --badge-border-hover: inherit;
+  --badge-color-hover: inherit;
+}
+
+.badge-light {
+  --badge-bg: var(--light-subtle);
+  --badge-border: var(--light);
+  --badge-color: var(--text);
+  --badge-bg-hover: inherit;
+  --badge-border-hover: inherit;
+  --badge-color-hover: inherit;
+}
+
+.badge-dark {
+  --badge-bg: var(--dark-subtle);
+  --badge-border: var(--dark);
+  --badge-color: var(--dark);
+  --badge-bg-hover: inherit;
+  --badge-border-hover: inherit;
+  --badge-color-hover: inherit;
+}

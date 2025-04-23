@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model-1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+    <button class="btn btn-primary btn-block" data-target="modal1">Open Modal 2</button>
+
+    <!-- Modal 2 -->
+    <div class="modal-overlay " id="modal1Overlay">
+        <div class="modal" id="modal1">
+            <div class="modal-content product-detail-modal">
+                <div class="card modal-card">
+                    <div class="card-head">
+                        <div class="card-image">
+                            <img src="../images/product-image.png" class="image" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-heading">
+                            <div class="card-title">
+                                Lemon Chocolate Cake with Raspberry
+                            </div>
+                            <div class="card-price">
+                                $60.45
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <p class="card-desc">
+                            Lemon Chocolate Cake with Raspberry is a delightful fusion of flavors that brings together
+                            the tangy zest of lemons, the rich indulgence of chocolate, and the sweet-tart burst of
+                            fresh raspberries. This cake features moist, velvety chocolate layers balanced with a hint
+                            of citrus, creating a harmonious contrast that excites the palate. The raspberry compote or
+                            fresh raspberry garnish adds a refreshing, fruity note, making every bite both indulgent and
+                            light.......
+                        </p>
+                        <div class="quantity-counter">
+                            <div class="counter">
+                                <button class="btn" id="decrement"><i class="bx bx-minus"></i></button>
+                                <input type="text" class="field-text" id="quantity" value="1" readonly="">
+                                <button class="btn btn-primary" id="increment"><i class="bx bx-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <a class="close-modal">
+                        <svg viewBox="0 0 20 20" fill="#000" width="20px" height="20px">
+                            <path
+                                d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div class="product-choice">
+                        <div class="input-field">
+                            <h2>Cream</h2>
+                            <span class="choice">
+                                <label class="check check-success"> <input type="checkbox" /> <span>No Chocolate</span>
+                                </label>
+                            </span>
+                            <span class="choice">
+                                <label class="check check-success"> <input type="checkbox" /> <span>Add Strawberry
+                                        Gem</span> </label>
+                            </span>
+                            <span class="choice">
+                                <label class="check check-success"> <input type="checkbox" /> <span> Decrease
+                                        Sugar</span> </label>
+                            </span>
+                            <span class="choice">
+                                <label class="check check-success"> <input type="checkbox" /> <span>Cheese
+                                        Topping</span> </label>
+                            </span>
+                        </div>
+                        <div class="select-flv">
+                            <div class="input-field">
+                                <label class="field-label">Side Fruit</label>
+                                <div class="field field-inline field-primary">
+                                    <select name="" id="" class="field-select">
+                                        <option value="">Select</option>
+                                        <option value="Option">Option</option>
+                                        <option value="Option">Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <div class="form-field">
+                                <label class="field-label">First Name</label>
+                                <div class="field">
+                                    <input type="text" class="field-text" placeholder="Write notes here..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button bucket-btn">
+                            <button class="btn btn-primary btn-block">
+                                Add to Bucket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

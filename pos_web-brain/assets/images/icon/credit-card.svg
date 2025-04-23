@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="credit-card">
+  <g>
+    <path d="M26,8H6a2,2,0,0,0-2,2V22a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V10A2,2,0,0,0,26,8Zm0,2v2H6V10ZM6,22V14H26v8Z"></path>
+    <path d="M23,17a2,2,0,0,0-1,.28,2,2,0,1,0,0,3.44A2,2,0,1,0,23,17Z"></path>
+  </g>
+</svg>
